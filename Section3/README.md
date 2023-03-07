@@ -1,5 +1,6 @@
 # Section3: 코틀린 기초
-### Index
+
+## Index
 18. 챕터 소개
 19. 변수 그리고 val과 var의 차이점
 20. 숫자 데이터 유형
@@ -32,4 +33,5 @@
 47. Nullables – 엘비스 연산자 – Not Null 단정
 48. 코드 - Nullables
 49. 요약 – 코틀린 기초 I
-### Folder
+
+## Folder
