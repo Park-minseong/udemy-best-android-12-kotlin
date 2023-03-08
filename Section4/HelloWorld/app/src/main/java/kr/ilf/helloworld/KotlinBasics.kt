@@ -9,6 +9,7 @@ fun main() {
     val mobilePhone3 = MobilePhone("IOS", "Apple", "IPhone 14 pro")
 }
 
+// 53. 클래스와 초기화
 class Person(firstName: String = "John", lastName: String) {
 
     //initializer Block
@@ -25,4 +26,9 @@ class MobilePhone(var osName: String, var brand: String, var model: String) {
     init {
         println("osBrand: $osName, brand: $brand, model: $model")
     }
+}
+
+// 56. 변수 영역과 쉐도잉
+fun myFunction(a: Int) {
+    var a = 3  //shadowing
 }
