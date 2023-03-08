@@ -4,6 +4,9 @@ fun main() {
     var denis = Person("Denis", "Panjuta")
     var john = Person(lastName = "Peterson")
 
+    val mobilePhone1 = MobilePhone("Android", "Samsung", "Galaxy S22 Ultra")
+    val mobilePhone2 = MobilePhone("Android", "Samsung", "Galaxy S20 Ultra")
+    val mobilePhone3 = MobilePhone("IOS", "Apple", "IPhone 14 pro")
 }
 
 class Person(firstName: String = "John", lastName: String) {
@@ -17,3 +20,9 @@ class Person(firstName: String = "John", lastName: String) {
     }
 }
 
+// 54. 클래스와 오브젝트 연습문제
+class MobilePhone(var osName: String, var brand: String, var model: String) {
+    init {
+        println("osBrand: $osName, brand: $brand, model: $model")
+    }
+}
