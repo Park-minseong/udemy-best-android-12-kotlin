@@ -39,10 +39,9 @@ fun main() {
     // Strings
     val myStr = "Hello World"
     var firstCharInStr = myStr[0]
-    var lastCharIntStr = myStr[myStr.length - 1]
+    var lastCharInStr = myStr[myStr.length - 1]
 
-
-    print("Last Character: " + lastCharIntStr)
+    print("Last Character: " + lastCharInStr)
 
     // 23. 연습문제
     var string: String = "Android Masterclass"
@@ -53,4 +52,13 @@ fun main() {
     var long: Long = 18881234567
     var boolean: Boolean = true
     var char: Char = 'a'
+
+    // 25. 문자열 보간법-문자열 견본
+    val myStr2 = "Hello World"
+    var firstCharInStr2 = myStr2[0]
+    var lastCharInStr2 = myStr2[myStr2.length - 1]
+    var myLnegth = myStr2.length
+
+    // 스트링 템플릿 표현식, 스트링 인터폴레이션
+    print("First Character: $firstCharInStr2 and the length of myStr is ${myStr2.length}")
 }
