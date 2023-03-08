@@ -36,4 +36,4 @@
 
 ## Folder
 KotlinBasics: 19   
-HelloWorld: 20~21
+HelloWorld: 20~
