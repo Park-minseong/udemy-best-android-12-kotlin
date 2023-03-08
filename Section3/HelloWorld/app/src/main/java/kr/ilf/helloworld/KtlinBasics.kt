@@ -80,14 +80,13 @@ fun main() {
         in 3..5 -> println("Spring")
         in 6..8 -> println("Summer")
         in 9..11 -> println("Fall")
-        in 12 downTo 2 -> println("winter")
-//12, 1, 2 -> println("winter")
+        12, 1, 2 -> println("winter")
         else -> println("incalid Season")
     }
 
     var age = 0
     when (age) {
-//	in 21..150 -> println("now you may drink in the US")
+        // in 21..150 -> println("now you may drink in the US")
         !in 0..20 -> println("now you may drink in the US")
         in 18..20 -> println("You may vote now")
         16, 17 -> println("you may drive now")
@@ -100,5 +99,17 @@ fun main() {
         !is Double -> println("$x is not a Double")
         is String -> println("$x is a String")
         else -> println("$x is none of above")
+    }
+
+    for (num in 1..10) {
+        println("$num")
+    }
+
+    for (i in 1 until 10) { // Same as - for(i in 1.until(10))
+        print("$i ")
+    }
+
+    for (i in 10 downTo 1 step 2) { // Same as - for(i in 10.downTo(1).step(2))
+        print("$i")
     }
 }
