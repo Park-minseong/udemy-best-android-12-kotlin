@@ -1,9 +1,9 @@
 package kr.ilf.helloworld
 
 fun main() {
-    variable()
-    ifWhen()
-    loopPractice()
+    // argument
+    val avg = avg(5.0, 4.1)
+    print("result is $avg")
 }
 
 private fun variable() {
@@ -142,3 +142,22 @@ private fun loopPractice() {
         }
     }
 }
+
+// 44. 기능 - 매개변수 - 인수와 반환
+
+fun avg(a: Double, b: Double): Double {
+    return (a + b) / 2
+}
+
+// Method - a Method is a Function within a class
+// Parameter (input)
+fun addUp(a: Int, b: Int): Int {
+    // output
+    return a + b
+}
+
+
+fun myFunction() {
+    print("Called from myFunction")
+}
+//
