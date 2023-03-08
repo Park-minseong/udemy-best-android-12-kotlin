@@ -35,5 +35,5 @@
 49. 요약 – 코틀린 기초 I
 
 ## Folder
-KotlinBasics: 19
+KotlinBasics: 19   
 HelloWorld: 20~21

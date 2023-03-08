@@ -1,9 +1,10 @@
 package kr.ilf.helloworld
 
 fun main() {
-    // argument
-    val avg = avg(5.0, 4.1)
-    print("result is $avg")
+//    // argument
+//    val avg = avg(5.0, 4.1)
+//    print("result is $avg")
+    nullable("Guest")
 }
 
 private fun variable() {
@@ -160,4 +161,29 @@ fun addUp(a: Int, b: Int): Int {
 fun myFunction() {
     print("Called from myFunction")
 }
-//
+// 44
+
+// 46. 코틀린의 Nullable
+fun nullable(nullableName: String?) {
+//    var name: String = "Denis"
+//    name = null
+//    var nullableName: String? = "Denis"
+//    nullableName = null
+
+//    var len = name.length
+    var len2 = nullableName?.length
+    nullableName?.let { println(it.length) }
+
+    // ?: Elvis operator
+    val name = nullableName ?: "Guest"
+    println("name is $name")
+
+    println(nullableName!!.lowercase()) // !! not-null 단정문
+
+/*
+    if (nullableName != null) {
+        var len2 = nullableName.length
+    } else {
+        null
+    }*/
+}
