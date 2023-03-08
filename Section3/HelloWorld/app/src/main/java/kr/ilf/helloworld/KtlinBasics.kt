@@ -1,6 +1,12 @@
 package kr.ilf.helloworld
 
 fun main() {
+    variable()
+    ifWhen()
+    loopPractice()
+}
+
+private fun variable() {
     // immutable variable
     // TODO: Add new functionality
 
@@ -61,7 +67,9 @@ fun main() {
 
     // 스트링 템플릿 표현식, 스트링 인터폴레이션
     print("First Character: $firstCharInStr2 and the length of myStr is ${myStr2.length}")
+}
 
+private fun ifWhen() {
     // 30~33. if, when
     var season = 3
     when (season) {
@@ -111,5 +119,26 @@ fun main() {
 
     for (i in 10 downTo 1 step 2) { // Same as - for(i in 10.downTo(1).step(2))
         print("$i")
+    }
+}
+
+private fun loopPractice() {
+    // 41. 반복문 연습하기
+    var humidity = "humid"
+    var humidityLevel = 80
+    for (i in 0..10000) {
+        if (i == 9001) {
+            println("IT'S OVER 9000!!!")
+        }
+    }
+
+    while (humidity == "humid") {
+        humidityLevel -= 5
+        println("humidity decreased")
+
+        if (humidityLevel <= 60) {
+            humidity = "comfy"
+            println("it's comfy now")
+        }
     }
 }
